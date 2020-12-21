@@ -54,9 +54,8 @@ int main(int argc, char *argv[]){
     }
 
     //preenche o vetor de entrada
-    vetor[0] = 1;
-    for(long int i = 1; i < N; i++){
-        vetor[i] = pow((-1), i)*(1.0/(2*i+1));
+    for(long int i = 0; i < N; i++){
+        vetor[i] = 2.0/((4*i+1)*(4*i+3));
     }
     //soma sequencial dos elementos
     GET_TIME(ini);
